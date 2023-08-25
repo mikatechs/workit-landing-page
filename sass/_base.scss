@@ -1,0 +1,48 @@
+//COLOR VARIABLES
+$color-primary-bg: rgb(36, 5, 62);
+$color-secondary-bg: rgb(253, 250, 255);
+
+$color-btn-primary: rgb(68, 255, 161);
+
+$color-text-primary: rgb(255, 255, 255);
+$color-text-secondary: rgb(88, 77, 98);
+
+//CSS RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% 1rem = 10px
+
+    @media only screen and (max-width: 71.9em) {
+        font-size: 50%; // 8px
+    }
+
+    @media only screen and (max-width: 57em) {
+        font-size: 40%; //6.4px
+    }
+
+    @media only screen and (max-width: 34.4em) {
+        font-size: 30%; //4.8px
+    }
+
+    @media only screen and (max-width: 24.57em) {
+        font-size: 25%; // 4px
+    }
+}
+
+body {
+    font-family: 'Fraunces';
+}
+
+// FOR MERGING BACKGROUND COLOR CAUSED BY CLIP-PATH 
+.main-container {
+    transform: translateY(-5.5rem);
+    overflow: hidden;
+}

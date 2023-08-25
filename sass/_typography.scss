@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url(../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format(truetype);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../fonts/manrope/Manrope-VariableFont_wght.ttf) format(truetype);
+    font-weight: 200 800;
+}
+// H1 HEADING
+.heading-1 {
+    color: $color-text-primary;
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 9.5rem;
+
+     @media only screen and (max-width: 50em) {
+        font-size: 7.5rem;
+    }
+}
+// H2 HEADING
+.heading-2 {
+    color: $color-primary-bg;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4rem; /* 125% */
+    margin-top: 5.6rem;
+
+    @media only screen and (max-width: 50em) {
+        margin-top: 0;
+        text-align: start;
+    }
+
+    @media only screen and (max-width: 34.4em) {
+        text-align: center;
+        font-size: 5.833rem;
+        margin-top: 5rem;
+    }
+}
+// H1 WITH SPAN ELEMENT
+span {
+    border-bottom: 3px solid #44FFA1;
+}

@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 11rem;
+   
+
+    &__logo-main {
+        width: 11.6rem;
+        height: 10.2224rem;
+
+        @media only screen and (max-width: 34.4em) {
+            width: 20rem;
+            height: 5.13rem;
+            margin-bottom: 10rem;
+        }
+
+    }
+
+    &__logo-img {
+        width: 100%;
+        display: block;
+    }
+
+    &__logos {
+        display: flex;
+        gap: 2rem;
+
+        &-fb:hover {
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(4%) sepia(88%) saturate(6595%) hue-rotate(280deg) brightness(80%) contrast(115%);
+        }
+
+        &-tw:hover {
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(4%) sepia(88%) saturate(6595%) hue-rotate(280deg) brightness(80%) contrast(115%);
+        }
+
+        &-ig:hover {
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(4%) sepia(88%) saturate(6595%) hue-rotate(280deg) brightness(80%) contrast(115%);
+        }
+    }   
+}

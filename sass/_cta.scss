@@ -1,0 +1,139 @@
+// CTA GRID OVERALL CONTAINER
+.cta {
+    display: grid;
+    grid-template-rows: repeat(4, 17.3rem) 1fr;
+    grid-template-columns: repeat(2, 38.21rem);
+    justify-content: center;
+    margin-top: 11rem;
+
+    @media only screen and (max-width: 34.4em) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    //FOUNDER IMAGE CONTAINER
+    &__founder {
+        width: 47.7rem;
+
+        &-img {
+            display: block;
+            width: 100%;
+        }
+
+         @media only screen and (max-width: 34.4em) {
+            grid-column: 2 / 3;
+            max-width: 58.55rem;
+        }
+    }
+    // CONTAINER BOX
+    &__container {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 3;
+        max-width: 73rem;
+        min-height: 41.3rem;
+        background-color: $color-primary-bg;
+        position: relative;
+        margin-bottom: 12.18rem;
+
+        @media only screen and (max-width: 50em) {
+            width: 64.25rem;
+            min-height: 46.875rem;
+        }
+
+        @media only screen and (max-width: 34.4em) {
+            width: 71.46rem;
+            min-height: 78.125rem;
+            transform: translateY(-11rem);
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        margin: 6.4rem;
+
+        @media only screen and (max-width: 34.4em) {
+            gap: 0;
+        }
+    }
+
+    &__heading {
+        color: $color-text-primary;
+        font-size: 5.6rem;
+        font-weight: 600;
+        line-height: 6.4rem; /* 114.286% */
+
+        @media only screen and (max-width: 34.4em) {
+            font-size: 6.67rem;
+            line-height: 10rem;
+            margin-bottom: 3.33rem;
+        }
+    }
+
+    &__text {
+        color: $color-text-primary;
+        font-family: 'Manrope';
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 3.2rem; /* 177.778% */
+
+        @media only screen and (max-width: 34.4em) {
+            font-size: 3.33rem;
+            line-height: 5.84rem;
+        }
+    }
+
+    &__btn {
+        width: 19rem;
+        height: 6.1rem;
+        border: none;
+        background: $color-btn-primary;
+        color: $color-primary-bg;
+        align-self: flex-start;
+        text-align: center;
+        font-family: 'Manrope';
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 3.2rem; /* 177.778% */
+        letter-spacing: -0.018rem;
+
+        &:hover {
+            color: $color-btn-primary;
+            background-color: $color-primary-bg;
+            border: 1px solid $color-btn-primary;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 34.4em) {
+            width: 35.9rem;
+            height: 11.46rem;
+            font-size: 3.34rem;
+            text-align: center;
+            margin-top: 5rem;
+            align-self: center;
+        }
+    }
+
+    &__image {
+        max-width: 17.3rem;
+        min-height: 13.7rem;
+        position: absolute;
+        top: 32rem;
+        right: 1.27rem;
+        
+
+        &-1 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 50em) {
+            top: 38rem;
+        }
+
+        @media only screen and (max-width: 34.4em) {
+            display: none;
+        }
+    }
+}
